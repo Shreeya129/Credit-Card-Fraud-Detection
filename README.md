@@ -1,13 +1,28 @@
-# Credit Card Fraud Detection using Autoencoders in Keras
+# Credit Card Fraud Detection using Deep Learning
 
-Full explanation can be found in [this blog post](https://www.curiousily.com/posts/credit-card-fraud-detection-using-autoencoders-in-keras/). The source code is compatible with TensorFlow 1.1 and Keras 2.0.4
+An unsupervised anomaly detection system built in Python using Keras and TensorFlow to detect fraudulent credit card transactions. The system utilizes an Autoencoder neural network architecture to learn normal transaction patterns and flag highly deviant transactions as potential fraud.
 
-### Hands-On Machine Learning from Scratch
+## 🚀 Key Features
+- **Unsupervised Anomaly Detection:** Utilizes Autoencoders to reconstruct normal transaction patterns and flag high reconstruction errors.
+- **Data Preprocessing:** Implements standard scaling on transaction amounts and features to handle variance.
+- **Performance Evaluation:** Evaluates model performance using Precision, Recall, and Receiver Operating Characteristic (ROC) curve analysis.
 
-Interested in deeper understanding of Machine Learning algorithms? Implement them in Python from scratch:
+## Tech Stack & Libraries
+- **Language:** Python 3
+- **Deep Learning Frameworks:** TensorFlow 2.x, Keras
+- **Data Science Libraries:** Pandas, NumPy, Scikit-Learn
+- **Visualization:** Matplotlib, Seaborn
 
-<a href="https://leanpub.com/hmls" target="_blank">
-  <img src="https://raw.githubusercontent.com/curiousily/Machine-Learning-from-Scratch/master/.github/book-cover.png" width="250">
-</a>
+## Dataset Structure
+The system is built to process highly imbalanced datasets containing credit card transactions, identifying the rare fraudulent instances from a massive pool of legitimate records.
 
-<a href="https://leanpub.com/hmls" target="_blank">Read the book here</a>
+## How to Setup and Run
+1. Clone this repository to your local system:
+   ```bash
+   git clone https://github.com
+   ```
+2. Open the Jupyter Notebook file:
+   ```bash
+   jupyter notebook fraud_detection.ipynb
+   ```
+3. Run the cells sequentially to preprocess the data, train the Autoencoder network, and visualize the anomaly metrics.
